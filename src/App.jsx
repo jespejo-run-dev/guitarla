@@ -6,6 +6,7 @@ import {db} from './data/db'
 const App = () => {
 
   const [data, setData] = useState(db);
+  const [cart, setCart] = useState([]);
 
   return (
     <>
@@ -22,6 +23,7 @@ const App = () => {
                   <Guitar
                     key={guitar.id}
                     guitar={guitar}
+                    setCart={setCart}
                   /> 
                 ))
               }
