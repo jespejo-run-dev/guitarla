@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-const Header = ({cart, removeFromCart, increaseQuantity, decreaseQuantity}) => {
+const Header = ({cart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart}) => {
 
     // state derivado
 
@@ -94,7 +94,10 @@ const Header = ({cart, removeFromCart, increaseQuantity, decreaseQuantity}) => {
                             }
 
 
-                            <button className="btn btn-dark w-100 mt-3 p-2">Vaciar Carrito</button>
+                            <button 
+                                className="btn btn-dark w-100 mt-3 p-2"
+                                onClick={clearCart}
+                            >Vaciar Carrito</button>
                         </div>
                     </div>
                 </nav>

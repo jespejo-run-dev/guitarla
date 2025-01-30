@@ -64,6 +64,10 @@ const App = () => {
 
   }
 
+  function clearCart(){
+    setCart([]);
+  }
+
   return (
     <>
 
@@ -72,6 +76,7 @@ const App = () => {
         removeFromCart={removeFromCart} 
         increaseQuantity={increaseQuantity}
         decreaseQuantity={decreaseQuantity}
+        clearCart={clearCart}
       />
 
       <main className="container-xl mt-5">
